@@ -1,0 +1,15 @@
+<%= form_for(@user) do |f| %>
+  <div>
+    <p>名前</p>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <p>パスワード</p>
+    <%= f.password_field :password %>
+  </div>
+  <div>
+    <p>アイコン設定</p>
+    <%= f.file_field :image_name %>
+  </div>
+　<%= f.submit '作成', class: 'btn btn-primary' %>
+<% end %>
